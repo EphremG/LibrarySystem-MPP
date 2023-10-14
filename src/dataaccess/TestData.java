@@ -30,6 +30,7 @@ public class TestData {
 		DataAccess da = new DataAccessFacade();
 		System.out.println(da.readBooksMap());
 		System.out.println(da.readUserMap());
+                System.out.println(da.readMemberMap());
 	}
 	///create books
 	public void bookData() {

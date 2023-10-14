@@ -113,7 +113,7 @@ public class DataAccessFacade implements DataAccess {
 	@Override
 	public void saveMemberCheckoutRecord(String memberId, CheckOutRecordEntry entry) {
 		HashMap<String, LibraryMember> libraryMemberHashMap = readMemberMap();
-		LibraryMember libraryMember = libraryMemberHashMap.get(memberId);
+		LibraryMember libraryMember = libraryMemberHashMap.get(memberId); 
 		if (libraryMember != null) {
 			libraryMember.addCheckOutRecordEntry(entry);
 			this.updateMember(memberId,libraryMember);

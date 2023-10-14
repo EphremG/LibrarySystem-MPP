@@ -49,6 +49,12 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
+        passwordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordFieldActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout loginErrorLabelLayout = new javax.swing.GroupLayout(loginErrorLabel);
         loginErrorLabel.setLayout(loginErrorLabelLayout);
         loginErrorLabelLayout.setHorizontalGroup(
@@ -123,6 +129,10 @@ public class LoginForm extends javax.swing.JFrame {
         }
       
     }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordFieldActionPerformed
 
     /**
      * @param args the command line arguments
